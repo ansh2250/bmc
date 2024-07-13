@@ -1,0 +1,84 @@
+/* Ensure the carousel images cover the container */
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    overflow: hidden; /* To contain the image during zoom */
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease; /* Smooth zoom transition */
+}
+.banner-heading{
+    color: var(--logo);
+}
+
+/* Adjust captions for readability */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.61);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+
+    .carousel-item {
+        height: 60vh;
+        min-height: 300px;
+    }
+    
+    .carousel-item img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* about header */
+.about-header {
+    position: relative;
+    background-image: url('/assets/images/header/about banner.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 120vh;
+    overflow: hidden;
+}
+
+.about-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(4px); /* Adjust the blur intensity as needed */
+    z-index: 0;
+}
+
+.about-header-content {
+    position: relative;
+    z-index: 1; /* Ensure content appears above the blurred background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.right-slider{
+    z-index: 999;
+}

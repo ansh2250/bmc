@@ -1,0 +1,81 @@
+#my-nav{
+    background-color: var(--black);
+}
+/* .offcanvas-body{
+    background-color: var(--logo);
+} */
+.offcanvas-header{
+   background-color: var(--black);
+}
+.dropdown-item{
+    color: var(--black);
+    background-color: var(--logo);
+}
+.dropdown-item:hover{
+    background-color: var(--black);
+    color: var(--logo);
+}
+.myspan{
+    color:var(--logo);
+    font-size: 30px;
+}
+.btn-close{
+    color: var(--logo);
+    background-color:var(--logo);
+}
+.dropdown-menu {
+    background-color: var(--logo);
+}
+
+.nav-link{
+    color:var(--white);
+    font-family:'montserrat', sans-serif;
+    font-size: 14px;
+    font-family: 500;
+}
+#active{
+    background-color: var(--logo);
+  color: var(--black);
+  border-radius: 5px;
+  font-weight: 700;
+}
+#active:hover{
+    background-color: var(--black);
+    color:var(--white);
+}
+.nav-link:hover{
+    padding:auto;
+    background-color: var(--black);
+    color: var(--white);
+}
+.nav-link::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:var(--white);
+    display: block;
+    transition: 0.5s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* ##################### media querry for navbar */
+/* General Styles */
+
+/* Media Queries for Larger Screens */
+@media (min-width: 992px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .offcanvas {
+        visibility: hidden;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+
+:root{
+    --black:#28282A;
+    --white:#FFFFFF;
+    --logo:#FFD832;
+}
+
+/* Apply the fonts to your elements */
+
+    h1, h2{
+        font-family: "Niconne", cursive;
+        font-size: 46px;
+        text-transform: capitalize;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    h3, h4, h5, h6{
+        font-family: montserrat;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .para{
+        font-family:'lato', sans-serif;
+        font-size: 15px;
+        text-align: justify;
+    }
